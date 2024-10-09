@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-style: sans-serif;
+    color: white;
+    background-color: #123;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, whitesmoke, #123);
+    position: absolute;
+    top: 10%;
+    font-size: 4rem;
+}
+
+.container {
+    background-color: rgb(255, 255, 255, 0.2);
+    height: 15%;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 7px 7px 20px rgba(255, 255, 255, 0.5), -7px -7px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+.container span {
+    width: 20%;
+    height: 50%;
+    /* margin-top: 2rem; */
+    box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.2), inset -4px -4px 7px rgba(255, 255, 255, 0.4);
+    border: 2px solid black;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.421), rgba(0, 0, 0, 0.435));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* color: #122; */
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.container span:nth-child(odd):before {
+    content: ':';
+    /* left: 20rem; */
+    padding-left: 22%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    /* background-color: red; */
+}
+
+.container span:nth-child(2):before {
+    color: white;
+    content: ':';
+    padding-left: 22%;
+    /* left: 6rem; */
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    /* background-color: red; */
+}
+
+.container span:nth-child(3):before {
+    color: white;
+    padding-left: 22%;
+    content: ':';
+    /* left: 9rem; */
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    /* background-color: red; */
+}
+
+.blockElem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    width: 50%;
+    height: 10%;
+}
+
+.btn {
+    width: 40%;
+    height: 40%;
+    margin: 0 20px 0 20px;
+    /* color: colo; */
+    font-size: 1.2rem;
+    padding: 0 10px 0 10px;
+    /* border: 1px solid black; */
+    background-color: whitesmoke;
+    opacity: 0.3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:nth-child(1):hover {
+    opacity: 1;
+    background-color: greenyellow;
+}
+
+.btn:nth-child(2):hover {
+    opacity: 1;
+    background-color: tomato;
+}
+
+.btn:nth-child(3):hover {
+    opacity: 1;
+    background-color: wheat;
+}
+
+.btn:nth-child(4):hover {
+    opacity: 1;
+    background-color: rgb(0, 255, 255);
+}
